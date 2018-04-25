@@ -1,0 +1,19 @@
+' vim: noexpandtab
+
+@startuml
+actor joe
+participant foobar
+
+	alt depth1
+		alt depth2
+			joe->foobar: hi
+		else something cool
+		end
+	else something
+		alt depth2
+			alt depth3
+				joe->foobar: hi
+			end
+		end
+	end
+@enduml
